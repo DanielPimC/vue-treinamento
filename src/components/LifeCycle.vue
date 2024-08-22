@@ -13,6 +13,7 @@
         created() {
             setTimeout(() => {
                 this.nome = 'Daniel'
+                
             }, 1000)
         },
         mounted() {
@@ -20,5 +21,10 @@
                 this.nome = 'Joaquim'
             }, 2000)
         },
+        methods: {
+            lifeCycle() {
+                console.log("executou")
+            }
+        }
     }
 </script>
